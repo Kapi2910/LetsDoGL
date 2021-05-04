@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/aadit/Documents/Projects/cpp/OpenGL/build",
+  "command": "\"C:\\Program Files\\LLVM\\bin\\clang++\" -IC:/Tools/vcpkg/installed/x86-windows/include -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\demo.dir\\main.cpp.obj -c C:\\Users\\aadit\\Documents\\Projects\\cpp\\OpenGL\\main.cpp",
+  "file": "C:/Users/aadit/Documents/Projects/cpp/OpenGL/main.cpp"
+}
+]
