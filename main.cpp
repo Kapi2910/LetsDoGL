@@ -1,7 +1,15 @@
 #include <iostream>
+#include "display/display.h"
 
-int main()
+int wmain() //called wmain instead of main because visual studio :/
 {
-    std::cout << "\n Hello World" << std::endl;
+    Display display(800, 600, "Hello Window");
+    
+    while(!display.IsClosed())
+    {
+        display.ClearDisplay(0.8f, 0.3f, 0.5f, 1.0f);
+        display.Update();
+    }
+
     return 0;
 }
