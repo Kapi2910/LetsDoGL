@@ -21,9 +21,15 @@
     <ClCompile Include="display\display.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shader\shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display\display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="shader\shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -31,5 +37,7 @@
     <None Include="Debug\OpenGL.exe" />
     <None Include="Debug\OpenGL.ilk" />
     <None Include=".gitignore" />
+    <None Include="res\Shaders\BasicShader.frag" />
+    <None Include="res\Shaders\BasicShader.vert" />
   </ItemGroup>
 </Project>
