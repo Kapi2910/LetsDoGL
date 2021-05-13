@@ -141,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="display\display.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mesh\mesh.cpp" />
     <ClCompile Include="shader\shader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display\display.h" />
+    <ClInclude Include="mesh\mesh.h" />
     <ClInclude Include="shader\shader.h" />
   </ItemGroup>
   <ItemGroup>

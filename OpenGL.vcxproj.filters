@@ -24,12 +24,18 @@
     <ClCompile Include="shader\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mesh\mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display\display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="shader\shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
