@@ -1,2 +1,3 @@
-﻿  main.cpp
+﻿  mesh.cpp
+C:\Users\aadit\Projects\cpp\OpenGL\mesh\mesh.cpp(26,20): warning C4018: '<': signed/unsigned mismatch
   OpenGL.vcxproj -> C:\Users\aadit\Projects\cpp\OpenGL\Debug\OpenGL.exe

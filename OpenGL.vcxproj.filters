@@ -27,6 +27,9 @@
     <ClCompile Include="mesh\mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="texture\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display\display.h">
@@ -38,6 +41,9 @@
     <ClInclude Include="mesh\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="texture\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Debug\OpenGL.exe" />
@@ -45,5 +51,10 @@
     <None Include=".gitignore" />
     <None Include="res\Shaders\BasicShader.frag" />
     <None Include="res\Shaders\BasicShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Textures\bricks.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

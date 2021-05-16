@@ -143,11 +143,13 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh\mesh.cpp" />
     <ClCompile Include="shader\shader.cpp" />
+    <ClCompile Include="texture\texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display\display.h" />
     <ClInclude Include="mesh\mesh.h" />
     <ClInclude Include="shader\shader.h" />
+    <ClInclude Include="texture\texture.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -155,6 +157,9 @@
     <None Include="Debug\OpenGL.ilk" />
     <None Include="res\Shaders\BasicShader.frag" />
     <None Include="res\Shaders\BasicShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Textures\bricks.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

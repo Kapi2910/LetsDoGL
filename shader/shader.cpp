@@ -19,6 +19,7 @@ Shader::Shader(const std::string& shaderFile)
 		glAttachShader(program, shaders[i]);
 	
 	glBindAttribLocation(program, 0, "position");//Bind an attribute location. why??
+	glBindAttribLocation(program, 1, "uv");//Bind an attribute location. why??
 	
 
 	//Link the program and check for errors

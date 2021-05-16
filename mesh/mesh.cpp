@@ -1,5 +1,5 @@
 #include "mesh.h"
-
+#include <vector>
 
 Mesh::Mesh(Vertex* vertexList, unsigned int vertexLength)
 {
@@ -17,14 +17,33 @@ Mesh::Mesh(Vertex* vertexList, unsigned int vertexLength)
 	glGenVertexArrays(1, &vertexArrayObjects);
 	glBindVertexArray(vertexArrayObjects);
 
+	std::vector<glm::vec3> positions;
+	std::vector<glm::vec2> uvs;
+
+	positions.reserve(vertexLength);
+	uvs.reserve(vertexLength);
+
+	for (int i = 0; i < vertexLength; i++)
+	{
+		positions.push_back(*vertexList[i].GetPos());
+		uvs.push_back(*vertexList[i].GetUV());
+	}
 	//2
 	glGenBuffers(1, vertexArrayBuffers);
 	glBindBuffer(GL_ARRAY_BUFFER, vertexArrayBuffers[POSITION]);
-	glBufferData(GL_ARRAY_BUFFER, vertexLength * sizeof(vertexList[0]), vertexList, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, vertexLength * sizeof(positions[0]), &positions[0], GL_STATIC_DRAW);
 
 	//3
 	glEnableVertexAttribArray(0);
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
+
+	glGenBuffers(1, vertexArrayBuffers);
+	glBindBuffer(GL_ARRAY_BUFFER, vertexArrayBuffers[UV]);
+	glBufferData(GL_ARRAY_BUFFER, vertexLength * sizeof(uvs[0]), &uvs[0], GL_STATIC_DRAW);
+
+	//3
+	glEnableVertexAttribArray(1);
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, 0);
 
 	glBindVertexArray(0);
 
