@@ -1,11 +1,11 @@
 # OpenGL
-
+---
 Created: May 12, 2021 3:46 AM
 Git: https://github.com/Kapi2910/LetsDoGL/
 
 [Intro To Modern OpenGL Tutorial](https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh)
+---
 # Contents
-- [OpenGL](#opengl)
 - [Contents](#contents)
 	- [OpenGL Windows 12-May-2021](#opengl-windows-12-may-2021)
 	- [Graphics Pipeline](#graphics-pipeline)
