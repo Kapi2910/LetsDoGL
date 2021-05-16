@@ -1,12 +1,13 @@
-# OpenGL
----
-Created: May 12, 2021 3:46 AM
-Git: https://github.com/Kapi2910/LetsDoGL/
 
-[Intro To Modern OpenGL Tutorial](https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh)
----
-# Contents
-- [Contents](#contents)
+# OpenGL
+
+Created: May 12, 2021 3:46 AM
+
+Tutorial followed: [Intro To Modern OpenGL Tutorial](https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh)
+
+
+Contents
+- [OpenGL](#opengl)
 	- [OpenGL Windows 12-May-2021](#opengl-windows-12-may-2021)
 	- [Graphics Pipeline](#graphics-pipeline)
 		- [Processing - Shaders 12 May 2021](#processing---shaders-12-may-2021)
@@ -14,6 +15,8 @@ Git: https://github.com/Kapi2910/LetsDoGL/
 	- [Texture](#texture)
 		- [Texture Loading 16-May-2021](#texture-loading-16-may-2021)
 		- [Texture Mapping 16-May-2021](#texture-mapping-16-may-2021)
+
+
 
 ## OpenGL Windows 12-May-2021
 
@@ -56,9 +59,10 @@ SDL_GL_CreateContext(window); // Creates an OpenGL Context
 
 ## Graphics Pipeline
 
-![OpenGL%20a2d214e4802c458fbbd63f750688c119/Untitled.png](OpenGL%20a2d214e4802c458fbbd63f750688c119/Untitled.png)
+![courtesy: thebennybox](README/Untitled.png)
 
 > ***Rasterization:*** It is the process of converting the given vertices into their corresponding shapes. 
+
 This is a 2 step process:
 1. Connect the vertices
 2. Fill them with Pixels
@@ -399,3 +403,4 @@ Vertex vertices[] = {
 ```cpp
 glBindAttribLocation(program, 1, "uv");//Bind an attribute to its shader counterpart
 ```
+``
