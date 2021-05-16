@@ -8,12 +8,12 @@ Git: https://github.com/Kapi2910/LetsDoGL/
 - [OpenGL](#opengl)
 - [Contents](#contents)
 	- [OpenGL Windows 12-May-2021](#opengl-windows-12-may-2021)
-	- [Graphics Pipeline 12-May-2021](#graphics-pipeline-12-may-2021)
+	- [Graphics Pipeline](#graphics-pipeline)
 		- [Processing - Shaders 12 May 2021](#processing---shaders-12-may-2021)
 		- [Data - Meshes 13-May-2021](#data---meshes-13-may-2021)
-	- [Texture 16-May-2021](#texture-16-may-2021)
-		- [Texture Loading](#texture-loading)
-		- [Texture Mapping](#texture-mapping)
+	- [Texture](#texture)
+		- [Texture Loading 16-May-2021](#texture-loading-16-may-2021)
+		- [Texture Mapping 16-May-2021](#texture-mapping-16-may-2021)
 
 ## OpenGL Windows 12-May-2021
 
@@ -54,7 +54,7 @@ window = SDL_CreateWindow(title /*Must be a C String*/, x position on screen, y 
 SDL_GL_CreateContext(window); // Creates an OpenGL Context
 ```
 
-## Graphics Pipeline 12-May-2021
+## Graphics Pipeline
 
 ![OpenGL%20a2d214e4802c458fbbd63f750688c119/Untitled.png](OpenGL%20a2d214e4802c458fbbd63f750688c119/Untitled.png)
 
@@ -227,11 +227,11 @@ class Mesh
 }
 ```
 
-## Texture 16-May-2021
+## Texture
 
 NOTE: Using SOIL2 for texture loading
 
-### Texture Loading
+### Texture Loading 16-May-2021
 
 Create a Texture class
 
@@ -301,7 +301,7 @@ void Texture::Bind(unsigned int unit)
 }
 ```
 
-### Texture Mapping
+### Texture Mapping 16-May-2021
 
 > OpenGL takes its textures in a separate coordinate system known as texture coordinate (texcoords or uv-coords). These coordinaties make the texture loading resolution independant
 
